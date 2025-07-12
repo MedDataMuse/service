@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer Aide Thèse - Biostatistiques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffe4e6; /* Rose clair */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .flyer-container {
+            background-color: #fff0f5; /* Rose plus doux */
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .flyer-image {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        .title {
+            color: #d12a6f; /* Rose foncé */
+            font-size: 2.25rem; /* 36px */
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        .subtitle {
+            color: #e91e63; /* Rose vif */
+            font-size: 1.5rem; /* 24px */
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .summary-text {
+            color: #333;
+            font-size: 1.125rem; /* 18px */
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .points-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            text-align: left;
+            width: 100%;
+            max-width: 400px;
+        }
+        .points-list li {
+            background-color: #ffebee; /* Rose très clair */
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            color: #555;
+        }
+        .points-list li svg {
+            margin-right: 10px;
+            color: #e91e63;
+        }
+        .call-to-action {
+            background-color: #e91e63; /* Rose vif */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.25rem; /* 20px */
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .call-to-action:hover {
+            background-color: #d12a6f; /* Rose foncé au survol */
+            transform: translateY(-3px);
+        }
+        .footer-text {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 25px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .flyer-container {
+                padding: 20px;
+            }
+            .title {
+                font-size: 1.75rem; /* 28px */
+            }
+            .subtitle {
+                font-size: 1.25rem; /* 20px */
+            }
+            .summary-text {
+                font-size: 1rem; /* 16px */
+            }
+            .call-to-action {
+                font-size: 1.1rem; /* 18px */
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <!-- Image from the user -->
+        <img src="13.jpg" alt="Personne avec des pensées embrouillées" class="flyer-image">
+
+        <h1 class="title">Statistiques de Thèse ? Plus jamais la galère !</h1>
+        <h2 class="subtitle">Votre biostatisticienne diplômée est là pour vous sauver ! 🚀</h2>
+
+        <p class="summary-text">
+            Étudiant(e) en médecine, marre des stats qui vous donnent des nœuds au cerveau pour votre thèse ?
+            Moi, biostatisticienne avec deux Masters parisiens, je transforme vos données en succès !
+        </p>
+
+        <ul class="points-list">
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Méthode, variables, CRF : on met tout au clair !
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                Analyse de données (R) et interprétation : je rends ça limpide.
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                Rédaction de la section "Résultats" : nickel chrome !
+            </li>
+        </ul>
+
+        <p class="summary-text">
+            Que vous soyez perdu(e) au début ou à la fin, je vous accompagne pour des stats claires et pertinentes.
+            Je suis ultra réactive, efficace, et je respecte les délais (voire je les bats !).
+        </p>
+
+        <a href="#" class="call-to-action">
+            Premier échange GRATUIT (45 min) !
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M15 15l4 4"/></svg>
+        </a>
+
+        <p class="footer-text">
+            Estimation du temps de travail : 8-10h (base propre), jusqu'à 15h (nettoyage), 20h (questionnaire + saisie).
+            Dites-moi tout sur votre projet, je peux sûrement vous aider !
+        </p>
+    </div>
+</body>
+</html>
